@@ -2,7 +2,7 @@
 {{- $root := . -}}
 {{- $controllerStrategy := "node" -}}
 {{- $_ := set $root "csiSocketAddress" "/csi-data/csi.sock" -}}
-{{- $mountIscsi := true }}
+{{- $mountIscsi := false }}
 ---
 kind: DaemonSet
 apiVersion: apps/v1
